@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align items</title>
+
+    <style>
+        .container {
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: rgb(92, 0, 179);
+            margin:5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch
+
+        }
+
+        .start{
+            align-items: flex-start;
+
+        }
+
+        .end{
+            align-items: flex-end;
+
+        }
+
+        .baseline{
+            align-items: baseline;
+
+        }
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height:300px;
+            justify-content: center;
+            
+        }
+
+        .central .item {
+            flex:0;
+            padding:20px
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Row</h1>
+    <p>Center</p>
+    <section class="container center ">
+        <div class="item">item 1</div>
+        <div class="item">ab cdsdfs  dfsd fssasdasd asdas ds dsse</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>Stretch</p>
+    <section class="container stretch ">
+        <div class="item">item 1</div>
+        <div class="item">abc dsdfsd fsdfasdasd asdas ss dsd sde</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>Start</p>
+    <section class="container start ">
+        <div class="item">item 1</div>
+        <div class="item">abc dsdfsd fssada asdas dfss dsd sde</div>
+        <div class="item">item 3</div>
+    </section>
+    
+
+    <p>End</p>
+    <section class="container end ">
+        <div class="item">item 1</div>
+        <div class="item">abc dsdfsd fssada asdas dfss dsd sde</div>
+        <div class="item">item 3</div>
+    </section>
+    
+    <p>Baseline</p>
+    <section class="container baseline">
+        <div class="item">itsdf sdf sssdf sdf em 1</div>
+        <div class="item"> fssada asdas dfss dsd sde</div>
+        <div class="item">sdf sd sdss   sdfsdf sdf s sdf fsdf sdfsd s 3</div>
+    </section>
+
+    <h1>Columns</h1>
+    <p>Center (column)</p>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">ab cdsdfs  dfsd fssasdasd asdas ds dsse</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>Stretch (column)</p>
+    <section class="container stretch column">
+        <div class="item">item 1</div>
+        <div class="item">abc dsdfsd fsdfasdasd asdas ss dsd sde</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>Start (column)</p>
+    <section class="container start column">
+        <div class="item">item 1</div>
+        <div class="item">abc dsdfsd fssada asdas dfss dsd sde</div>
+        <div class="item">item 3</div>
+    </section>
+    
+
+    <p>End (column)</p>
+    <section class="container end column">
+        <div class="item">item 1</div>
+        <div class="item">abc dsdfsd fssada asdas dfss dsd sde</div>
+        <div class="item">item 3</div>
+    </section>
+    
+    <p>Baseline (column)</p>
+    <section class="container baseline column">
+        <div class="item">itsdf sdf sssdf sdf em 1</div>
+        <div class="item"> fssada asdas dfss dsd sde</div>
+        <div class="item">sdf sd sdss   sdfsdf sdf s sdf fsdf sdfsd s 3</div>
+    </section>
+
+    <h3>Alinhamento central a tela</h3>
+    <section class="container central center">
+        <div class="item">
+            a de amor b de baixinho c de coracao e de escola de de dar a mao.
+        </div>
+    </section>
+</body>
+</html>
